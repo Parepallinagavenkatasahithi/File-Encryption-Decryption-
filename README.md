@@ -1,18 +1,50 @@
-## Getting Started
+🔐 File Encryption/Decryption
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+📄 Description
+This Java console application allows users to encrypt or decrypt the contents of a text file using a simple Caesar cipher (character shifting). Users can choose to encrypt or decrypt, specify input and output file paths, and the program will process the file accordingly.
 
-## Folder Structure
+🧠 Skills Used
+->File handling (FileReader, BufferedReader, FileWriter)
+->String and character manipulation
+->User input handling with Scanner
 
-The workspace contains two folders by default, where:
+⚙️ How It Works
+->Encrypts/decrypts using a simple shift-based algorithm (e.g., shifting ASCII characters by a key).
+->Leaves special characters (spaces, punctuation) unchanged.
+->Saves the result in a separate file specified by the user.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+📋 Requirements
+         1.  Java JDK 8 or higher
+         2.A text file for input (.txt format recommended)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+🚀 How to Run
+1.Save the file as FileEncryptDecrypt.java
+2.Open terminal/command prompt
+3.Compile the code:
+         javac FileEncryptDecrypt.java
+4.Run the program:
+         java FileEncryptDecrypt
+         
+🖥️ Example
+=== File Encryption/Decryption ===
+Enter 'e' to encrypt or 'd' to decrypt: e
+Enter input file path: input.txt
+Enter output file path: encrypted.txt
+Encryption complete. Output saved to: encrypted.txt
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+🔓 Example Cipher
+Original:
+Hello123!
+Encrypted (SHIFT_KEY = 4):
+Lipps567!
 
-## Dependency Management
+🔐 Notes
+->This uses a basic Caesar cipher, suitable for learning but not secure for real-world encryption.
+->Special characters are not encrypted, only letters and digits are shifted.
+->Avoid using this for sensitive data.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+🛠️ Future Enhancements
+->Support for more secure encryption (AES)
+->GUI using Java Swing
+-.Automatic file overwrite prevention
+->Key-based encryption input
